@@ -42,6 +42,7 @@ export default class DailyPicScreen extends Component {
 
     render() {
         const url = this.state.apod.url
+        {/*
         if (Object.keys(this.state.apod).length === 0) {
             return (
                 <View
@@ -50,6 +51,30 @@ export default class DailyPicScreen extends Component {
                 </View>
             )
         }
+        */}
+        
+        {/*
+        if (Object.keys(this.state.apod).length == 0) {
+            return (
+                <View
+                    style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+                    <Text>Carregando</Text>
+                </View>
+            )
+        }
+        */}
+        
+        {/*
+        if (Object.keys(this.state.apod).length = 0) {
+            return (
+                <View
+                    style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+                    <Text>Carregando</Text>
+                </View>
+            )
+        }
+        */}
+        
         else {
             return (
                 <View style={styles.container}>
@@ -65,8 +90,14 @@ export default class DailyPicScreen extends Component {
                                 <Image source={{ "uri": url }} style={{ width: "100%", height: 300, borderRadius: 10 }}></Image>
                             </TouchableOpacity >
                             <View style={{ padding: 20 }}>
-                                <Text style={styles.titleText}>{this.state.apod.title}</Text>
-                                <Text style={styles.explanationText}>{this.state.apod.explanation}</Text>
+                                {/*<Text style={styles.titleText}>{this.state.apod.title}</Text>*/}
+                                {/*<Text style={styles.explanationText}>{this.state.apod.explanation}</Text>*/}
+
+                                {/*<Text style={styles.titleText}>{this.apod.title}</Text>*/}
+                                {/*<Text style={styles.explanationText}>{this.apod.explanation}</Text>*/}
+
+                                {/*<Text style={styles.titleText}>{this.state.title}</Text>*/}
+                                {/*<Text style={styles.explanationText}>{this.state.explanation}</Text>*/}
                             </View>
                         </ScrollView>
                     </ImageBackground>
